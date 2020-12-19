@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:elevation="5dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+
+
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+           android:background="@drawable/to_corner_round"
+            android:id="@+id/item_cover"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0288D1"
+            android:drawableRight="@drawable/ic_chrome_reader_mode"
+            android:text="Start Reading"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0288D1"
+            android:drawableRight="@drawable/ic_add"
+            android:text="Pages"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/item_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="author" />
+
+        <TextView
+            android:id="@+id/item_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="time" />
+
+        <TextView
+
+            android:clickable="true"
+            android:drawableRight="@drawable/ic_mode_edit"
+            android:id="@+id/item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="desc" />
+
+        <TextView
+            android:id="@+id/item_goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:drawableRight="@drawable/ic_golf_course"
+            android:text="goal" />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:id="@+id/item_time2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reading Sessions" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/book_serssions_recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

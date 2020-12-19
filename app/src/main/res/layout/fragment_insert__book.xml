@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/diloge"
+
+    android:layout_height="match_parent"
+    tools:context=".Insert_Book">
+
+
+
+    <TextView
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:textSize="30dp"
+        android:id="@+id/textView2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Adding New Book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+  <LinearLayout
+      android:padding="10dp"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <ImageButton
+        android:scaleType="fitCenter"
+          android:onClick="image_load"
+          android:layout_gravity="center_horizontal"
+          android:id="@+id/imageButton"
+          android:layout_width="100dp"
+          android:layout_height="150dp"
+          android:src="@drawable/ic_image" />
+
+      <TextView
+          android:gravity="center"
+          android:id="@+id/textView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Cover Image" />
+
+      <EditText
+          android:hint="book titke"
+          android:id="@+id/editText_title"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          />
+
+      <EditText
+          android:id="@+id/edit_text_desc"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:hint="book description" />
+
+      <EditText
+          android:id="@+id/editText6_aouther_name"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="aouther name"
+
+          />
+
+      <EditText
+          android:id="@+id/editText6_genr"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="book genre"
+
+          />
+
+      <EditText
+          android:id="@+id/editText6_pages"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="Total Pages"
+
+          android:inputType="number" />
+
+      <Button
+          android:id="@+id/button_add"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Add" />
+
+      <Button
+          android:id="@+id/button_add_from_google"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Add from Google" />
+
+  </LinearLayout>
+</LinearLayout>
